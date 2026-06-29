@@ -37,11 +37,10 @@ header {
     border-bottom: 2px solid #2e4a2b;
 }
 
-.logo-text {
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: #2e4a2b; /* Dark Forest Green */
-    letter-spacing: 1.5px;
+.logo-badge {
+    max-height: 80px; 
+    width: auto;
+    display: block;
 }
 
 nav a {
@@ -198,11 +197,28 @@ footer {
     background-color: #2e4a2b;
     color: white;
     text-align: center;
+}
+
+.footer-content {
     padding: 30px 20px;
 }
 
-footer p {
+.footer-content p {
     margin: 5px 0;
+}
+
+/* --- Developer Mark --- */
+.developer-mark {
+    background-color: #1a2e18; /* Darker contrast bar */
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    color: #a0aab2;
+    letter-spacing: 1px;
+}
+
+.developer-mark strong {
+    color: #ff6b00; /* Safety Orange tie-in */
+    font-weight: bold;
 }
 
 /* --- Responsive Adjustments --- */
