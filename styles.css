@@ -59,7 +59,14 @@ nav a:hover {
 /* --- Hero Section --- */
 .hero {
     background-color: #f4f1ea;
-    padding: 80px 20px;
+    /* The Layer Stack: An 88% parchment fade sitting directly on top of the logo */
+    background-image: 
+        linear-gradient(rgba(244, 241, 234, 0.88), rgba(244, 241, 234, 0.88)), 
+        url('logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px; /* Scales the badge up to a massive watermark */
+    padding: 120px 20px; /* Added extra padding to give the watermark breathing room */
     text-align: center;
     border-bottom: 1px solid #ddd;
 }
