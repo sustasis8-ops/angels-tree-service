@@ -1,0 +1,232 @@
+/* --- Global Variables & Branding --- */
+:root {
+    --primary-green: #2C5E2E;
+    --bg-parchment: #F4F1E1;
+    --accent-brown: #5C4033;
+    --safety-orange: #FF6700;
+}
+
+/* --- Base Styles --- */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-parchment);
+    color: var(--accent-brown);
+}
+
+/* --- Emergency Top Bar --- */
+.top-bar {
+    background-color: var(--safety-orange);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* --- Navigation Header --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: var(--bg-parchment);
+    border-bottom: 3px solid var(--primary-green);
+}
+
+.header-logo {
+    height: 70px;
+    width: auto;
+    display: block;
+    mix-blend-mode: multiply;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header a {
+    color: var(--primary-green);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: var(--safety-orange);
+}
+
+/* --- Hero Section --- */
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--safety-orange);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #e65c00;
+}
+
+/* --- Services Section --- */
+.services-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    color: var(--primary-green);
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background-color: var(--bg-parchment);
+    padding: 40px 20px;
+    border-radius: 8px;
+    border-top: 5px solid var(--primary-green);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-top: 5px solid var(--safety-orange);
+}
+
+.service-card h3 {
+    color: var(--primary-green);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.service-card p {
+    line-height: 1.6;
+}
+
+/* --- Contact Section --- */
+.contact-section {
+    padding: 80px 20px;
+    background-color: var(--bg-parchment);
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    color: var(--primary-green);
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.info-item {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.info-item a {
+    color: var(--safety-orange);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- Contact Form --- */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-green);
+}
+
+.contact-form button {
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--primary-green);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
